@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>   
+        <img class="logo" src="imagenes/logo.png" alt=" logo de alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="40" rows="10" placeholder="Ingrese texto aqui" id="inputText"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" id="encryptButton">Encriptar</button>
+                <button class="btn-desencriptar" id="decryptButton">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="text-area mensaje"  cols="20" rows="10" id="outputText" readonly></textarea>
+            <div>
+                <h6 class="informacion">Puedes copiar el resultado y compartirlo</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar copiar" id="copyButton">Copiar</button>
+
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+    <script src="Copy.js"></script>
+</body>
+</html>
